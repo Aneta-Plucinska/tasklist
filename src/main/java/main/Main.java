@@ -18,9 +18,7 @@ public class Main {
                 null, Status.OPEN, false, LocalDate.now(), null,
                 null, Priority.LOW, location, null, null);
 
-        Task task2 = new Task.TaskBuilder()
-                .withId(2)
-                .withTitle("Naprawa Usterki")
+        Task task2 = new Task.TaskBuilder(2, "Naprawa Usterki")
                 .withDueDate(LocalDate.now().plusDays(5))
                 .withPriority(Priority.MEDIUM)
                 .withSummary(":)")
